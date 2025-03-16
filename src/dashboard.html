@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooller. - dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script defer src="script.js"></script>
+    <script src="dashboard.js"></script>
+    <style>
+        nav {
+            margin-bottom: 2%;
+        }
+
+        main {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span class="logo-font"><a href="/index.html">tooller.</a></span>
+            </div>
+            <div class="motto">
+                <div class="typed-out">
+                    <span>We provide tools for rental.</span>
+                </div>
+            </div>
+            <div class="nav_buttons">
+                <button><a href="contact.html">Contact</a></button>
+                <button><a href="dashboard.html">Dashboard</a></button>
+                <button><a href="sign_up.html">Sign up</a></button>
+            </div>
+        </nav>
+        <main>
+            <main class="dashboard" id="dashboard">
+                <section class="dashboard_section" data-section="account">
+                    <h1 id="welcomeMessage">Loading...</h1>
+                    <button onclick="logout()" class="button">Logout</button>
+                </section>
+    
+                <section class="dashboard_section" data-section="items">
+                    <h2>📋 Lista sprzętu</h2>
+                    <p>Przeglądaj i rezerwuj dostępne narzędzia.</p>
+                </section>
+        
+                <section class="dashboard_section" data-section="reservations">
+                    <h2>🔒 Moje rezerwacje</h2>
+                    <p>Sprawdź aktualnie wypożyczone sprzęty i terminy zwrotu.</p>
+                </section>
+            </main>
+
+            <section id="content" class="hidden">
+                <div id="dynamicContent">
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

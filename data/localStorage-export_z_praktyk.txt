@@ -1,0 +1,14 @@
+items
+'[{"id":"884736","name":"Wiertarka udarowa","description":"wiertarka udarowa po wiecej info prosze dzwonic na numer 777-777-777","imgPath":"/data/images/wiertarka_udarowa.jpg"},{"id":"84734","name":"Wiertarko-wkrętarka","description":"wiertarko-wkretarka \\npo wiecej info prosze dzwonic na numer 777-777-777\\ndo uslyszenia","imgPath":"/data/images/wiertarko_wkretarka.jpg","reserved":true},{"id":2072,"name":"Cyrularka","description":"cyrkularka","imgPath":"/data/images/cyrkularka.jpeg"}]' 
+
+
+accounts
+'[{"email":"teksek.dev@proton.me","password":"teksek587!","telephone":"385-546-467","country":"Poland","zipCode":"32-640"},{"email":"test@gmail.com","password":"hhhh","telephone":"334-555-555","country":"Poland","zipCode":"32-640"}]'
+
+
+reservations
+'[{"itemID":"84734","userEmail":"teksek.dev@proton.me","pending":false,"date":"28.02.2025"}]' 
+
+
+loggedInUser
+'{"email":"teksek.dev@proton.me","password":"teksek587!","telephone":"385-546-467","country":"Poland","zipCode":"32-640"}'

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooller. - sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script defer src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let user = localStorage.getItem("loggedInUser");
+            if (user) {
+                user = JSON.parse(user);
+                let signUpButton = document.querySelector(".nav_buttons > :last-child > a");
+                signUpButton.innerText = user.email.split("@")[0];
+                signUpButton.setAttribute('href', "dashboard.html");
+                window.location.href = 'dashboard.html';
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span class="logo-font"><a href="/index.html">tooller.</a></span>
+            </div>
+            <div class="motto">
+                <div class="typed-out">
+                    <span>We provide tools for rental.</span>
+                </div>
+            </div>
+            <div class="nav_buttons">
+                <button><a href="contact.html">Contact</a></button>
+                <button><a href="dashboard.html">Dashboard</a></button>
+                <button><a href="sign_up.html">Sign up</a></button>
+            </div>
+        </nav>
+        <main class="sign_up">
+            <div class="sign_up_block">
+                <div>
+                    <h3>Have an account?</h3>
+                    <button class="sign_up_button" id="logInButton">Login</button>
+                </div>
+                <div>
+                    <h3>Don't have an account?</h3>
+                    <button class="sign_up_button" id="registerButton">Register</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
