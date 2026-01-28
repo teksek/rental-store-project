@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let adminEmails = ["teksek.dev@proton.me", "admin@admin.me"];
 
     if (!user) {
-        window.location.href = "/index.html"; // jeśli brak użytkownika, wracamy do logowania
+        window.location.href = "../index.html"; // jeśli brak użytkownika, wracamy do logowania
     } else {
         user = JSON.parse(user);
         document.getElementById("welcomeMessage").innerText = "Welcome, " + user.email;
@@ -331,5 +331,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function logout() {
     localStorage.removeItem("loggedInUser"); // usuwamy dane użytkownika
-    window.location.href = "/index.html"; // wracamy do logowania
+    window.location.href = "../index.html"; // wracamy do logowania
 }

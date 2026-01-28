@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    if(window.location.pathname === "/src/sign_up.html") {
+    console.log("Aktualna ścieżka:", window.location.pathname);
+
+    if(window.location.pathname.includes("sign_up.html")) {
         let signUpBlock = document.querySelector('.sign_up_block');
         let logInButton = document.querySelector('#logInButton').addEventListener("click", () => {
             waveAnimation(signUpBlock, "login");
@@ -7,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         let registerButton = document.querySelector('#registerButton').addEventListener("click", () => {
             waveAnimation(signUpBlock, "register");
         });
-    } else if (window.location.pathname === "/src/dashboard.html") {
+    } else if (window.location.pathname.includes("/src/dashboard.html")) {
         
-    } else if (window.location.pathname === "/src/items_list.html") {
+    } else if (window.location.pathname.includes("/src/items_list.html")) {
 
-    } else if (window.location.pathname === "/src/add_item.html") {
+    } else if (window.location.pathname.includes("/src/add_item.html")) {
 
-    } else if (window.location.pathname === "/index.html") {
+    } else if (window.location.pathname.includes("/index.html")) {
 
     }
 });

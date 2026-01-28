@@ -1,62 +1,41 @@
-Projekt: System Rezerwacji Sprzętu i Narzędzi
-📌 Cel: Aplikacja webowa do zarządzania wypożyczeniem sprzętu i narzędzi w firmie lub warsztacie.
+# System zarządzania wypożyczalnią sprzętu
 
+Aplikacja webowa do zarządzania wypożyczeniem narzędzi i sprzętu. Umożliwia użytkownikom rezerwację sprzętu, a administratorom zarządzanie zasobami. Stworzona podczas praktyki zawodowej w technikum na kierunku Technik Programista.
 
-🎯 Technologie:
-Frontend: React (Next.js) lub Vue.js
-Backend: Node.js (Express) lub Python (Django/FastAPI)
-Baza danych: PostgreSQL lub MongoDB
+## Funkcjonalności
 
+### Dla użytkowników:
+- Rejestracja i logowanie
+- Przeglądanie i rezerwacja dostępnego sprzętu
+- Zarządzanie swoimi rezerwacjami
+- Zwrot wypożyczonego sprzętu
 
-🔧 Funkcjonalności:
-1. Dodawanie i edytowanie sprzętu – nazwa, opis, stan, zdjęcie, dostępność.
-2. Rezerwacja sprzętu – użytkownicy mogą rezerwować dostępny sprzęt na określony czas.
-3. Historia wypożyczeń – kto i kiedy korzystał z danego narzędzia.
-4. Status sprzętu – dostępny, w użyciu, w naprawie.
-5. Panel administracyjny – możliwość dodawania nowych sprzętów i zatwierdzania rezerwacji.
-6. Powiadomienia e-mail o nadchodzącym terminie zwrotu.
-7. Logowanie i role użytkowników – pracownik, administrator.
+### Dla administratorów:
+- Dodawanie nowego sprzętu
+- Zatwierdzanie rezerwacji
+- Historia wypożyczeń
 
+## Technologie
 
-📈 Dodatkowe opcje (dla ambitnych):
-✅ Kod QR na sprzęcie do szybkiego skanowania i sprawdzania dostępności.
-✅ Raporty o najczęściej wypożyczanym sprzęcie.
-✅ API do integracji z innymi systemami.
+- HTML5, CSS3, Vanilla JavaScript
+- LocalStorage API
 
+## Uruchomienie
 
+Otwórz `index.html` w przeglądarce. Nie wymaga instalacji.
 
+## Struktura
+```
+├── index.html              # Strona główna
+├── src/
+│   ├── sign_up.html       # Logowanie/rejestracja
+│   ├── dashboard.html     # Panel użytkownika
+│   ├── script.js          # Logika autentykacji
+│   ├── dashboard.js       # Logika dashboardu
+│   └── style.css          # Style
+└── favicon.ico
+```
 
--------------- DASHBOARD --------------
-📌 Dashboard dla pracownika (standardowy użytkownik)
+## Kontekst
 
-🎯 Główne funkcje:
-✅ Lista dostępnego sprzętu – sprzęt, który można zarezerwować.
-✅ Moje rezerwacje – aktywne rezerwacje użytkownika z datami zwrotu.
-✅ Historia wypożyczeń – lista sprzętów, które użytkownik wypożyczał.
-✅ Szybka rezerwacja – możliwość rezerwacji sprzętu z poziomu dashboardu.
-✅ Powiadomienia – alerty o kończących się rezerwacjach lub sprzęcie do zwrotu.
-
-📌 UI:
-- Tabela sprzętu: nazwa, stan, dostępność, przycisk „Zarezerwuj”.
-- Widżet „Moje rezerwacje”: lista aktywnych rezerwacji.
-- Sekcja powiadomień: np. „Masz 2 dni na zwrot sprzętu XYZ”.
-
-🔧 Dashboard dla administratora
-
-🎯 Więcej opcji zarządzania:
-✅ Panel sprzętu – dodawanie, edytowanie, usuwanie sprzętu.
-✅ Zatwierdzanie rezerwacji – lista rezerwacji do akceptacji.
-✅ Zarządzanie użytkownikami – lista pracowników, resetowanie haseł, przypisywanie ról.
-✅ Raporty – statystyki o wykorzystaniu sprzętu (najczęściej wypożyczane, czas użycia).
-✅ Status sprzętu – możliwość oznaczania sprzętu jako „w naprawie” lub „niedostępny”.
-
-📌 UI:
-- Widżet „Do zatwierdzenia”: rezerwacje oczekujące na akceptację.
-- Statystyki: wykresy o stanie sprzętu, częstotliwości wypożyczeń.
-- Lista użytkowników: opcja zmiany ról, edycji danych.
-
-💡 Dodatkowe funkcje, które mogą się przydać:
-✅ Wyszukiwarka sprzętu – łatwe znajdowanie narzędzi po nazwie/opisie.
-✅ Filtrowanie po statusie – np. „Dostępny”, „Wypożyczony”, „W naprawie”.
-✅ Generowanie raportów PDF – lista rezerwacji, sprzętu w użyciu.
-✅ Kod QR – szybkie sprawdzanie dostępności sprzętu.
+Projekt stworzony podczas praktyk zawodowych w technikum programistycznym.
